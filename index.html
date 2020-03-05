@@ -1,0 +1,63 @@
+<html>
+<font color="#800000"><b>
+<head>
+<script> 
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+</script>
+</head>
+
+
+<style>
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+    
+
+#random{
+  /* BOX MODEL */
+  width: 100%;
+  height: 450px;
+  border: 1px solid black;
+  
+  /* ENHANCEMENT */
+  background-image: url(https://twinfinite.net/wp-content/uploads/2019/10/destiny-2-shadowkeep-5-1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
+</style>
+
+<body onload="randombg()">
+	<div id="random" ></div>  
+</body>
+
+<div class="lbutton" align="left"><button onclick="window.location.reload();">DO NOT PRESS THIS BUTTON </button></div>
+
+<script>
+
+function randombg(){
+  var random= Math.floor(Math.random() * 6) + 0;
+  var bigSize = ["url('https://twinfinite.net/wp-content/uploads/2019/10/destiny-2-shadowkeep-5-1.jpg')",
+                 "url('https://wallpaperplay.com/walls/full/7/e/3/59838.jpg')",
+                 "url('https://images3.alphacoders.com/854/854672.jpg')"];
+  document.getElementById("random").style.backgroundImage=bigSize[random];
+}
+</script>
+
+</html> 
