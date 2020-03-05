@@ -1,0 +1,5 @@
+ec2-174-129-64-187.compute-1.amazonaws.com
+	
+174.129.64.187
+
+ssh -i mgcklwz-3520.pem ec2-user@174.129.64.187

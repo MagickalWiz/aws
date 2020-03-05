@@ -1,0 +1,23 @@
+dnf update;
+
+dnf install httpd;
+systemctl enable httpd;
+systemctl start httpd;
+
+dnf install git;
+
+dnf install tcpdump;
+
+dnf module install php;
+dnf module install php:7.2/common;
+dnf install php-mysqlnd;
+
+systemctl restart httpd.service;
+systemctl restart php-fpm.service;
+
+
+curl ifconfig.co
+Result: 174.129.64.187
+
+curl icanhazip.com
+Result: 174.129.64.187
