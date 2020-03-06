@@ -26,8 +26,9 @@ curl icanhazip.com
 Result: 174.129.64.187
 
 
-Create webpage w/ links on AWS EC2 Redhat instance
+Create webpage w/ links on AWS EC2 RHEL instance
 Use /var/www/html
 Create a user with a password for cockpit login: 9090
 60 min tcpdump and post on github
 tcpdump -w -------.pcap -i eth0
+Set users and groups.
