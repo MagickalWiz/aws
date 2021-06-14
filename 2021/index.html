@@ -1,1 +1,64 @@
+<html>
+<style>
+.lbutton {
+	position: absolute;
+	bottom: 8px;
+	left: 8px;
+	font-size: 14px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 2px solid #706f6d;
+  float: left;
+  width: 400px;
+}
+
+div.gallery:hover {
+  border: 2px solid #000;
+}
+
+div.gallery img {
+  width: 400px;
+  height: 260;
+}
+
+div.desc {
+  padding: 15px;
+  font-color: #706f6d;
+  text-align: center;
+  font-size: 12px;
+}
+</style>
+
+<body style='background-color:#bec2cb;'>
+<h1 style='color:#706f6d;'>
+the answer to life the universe and everything is 42<br/>
+baby yoda is not the answer despite popular belief<br/>
+<a href='/documents'>docs</a>
+<a href='clock.html'>clock</a>
+<script language="JavaScript">
+document.write('<a href="' + window.location.protocol + '//' + window.location.hostname + ':8000' + window.location.pathname + '" >:8000</a> ' );
+</script>
+</h1>
+</body>
+</head>
+
+<div class="gallery">
+  <img src="/img/42.png" alt="42" width="600" height="400">
+  <div class="desc">&#10004;</div>
+</div>
+
+<div class="gallery">
+  <img src="/img/bbyyda.png" alt="babyyoda" width="600" height="400">
+  <div class="desc">&#10060;</div>
+</div>
+
+<div class="gallery">
+  <img src="/img/icec.png" alt="ice" width="600" height="400">
+  <div class="desc">&#10060; (This fixes a lot of problems but not all of them)</div>
+</div>
+<p style='color:#bec2cb;'> if you can read this you know the true Answer to Life the Universe and Everything</p>
+<button onClick="window.location.reload();" <div class="lbutton" align="left"> DO NOT PUSH THIS BUTTON </button>
+</html>
 
